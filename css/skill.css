@@ -1,35 +1,51 @@
+@charset "utf-8";
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;
+}
+
 .headerImg li {
 	display: inline-block;
 }
 
 .threeImg {
 	position: absolute;
-	top: 0px;
-	right: 60px;
+	right: 10px;
+}
+
+.topimage {
+	border: 1px solid red;
+	padding-bottom: 10px;
+}
+
+.login {
+	display: inline-block;
+	padding-right: 10px;
 }
 
 .toptwo {
-	height: 40px;
-	width: 100%;
-	padding: 10px 0px 5px 60px; 
+	padding: 10px 20px 5px 60px; 
 }
 
 .truenav {
 	background-color: #29B078;
 }
 
-.navbar-brand {
-	margin-left: 220px;
+
+.newbrand {
+	margin: 10px;
+	padding-bottom: 10px;
 }
 
 .newnav {
-	height: 80px;
+	padding: 10px 35px 20px;
 	background-color: #29B078;
 }
 
 .bottomw {
 	padding: 30px 0 0 0;
 }
+
 
 .navself li a:link,
 .navself li a:visited {
@@ -52,7 +68,13 @@
 }
 
 .blankAreasmall {
+	padding-top: 190px;
 	height: 20px;
+}
+
+.tab1Area .tab2Area .tab3Area .tab4Area .tab5Area {
+	margin-bottom: 20px;
+	padding: 5px;
 }
 
 .miaobaob {
@@ -73,23 +95,34 @@
 }
 
 .selfLabel {
-	padding: 10px 10px 10px 28px;
+	padding: 10px 20px 10px 28px;
 	border-bottom: 1px solid #DDD;
 }
 
-.selfLabel a{
-	padding: 0 20px;
+.selfLabel h4 {
+	display: inline-block;
+	padding-top: 20px;
 }
 
-.selfLabel a:link,
-.selfLabel a:visited {
+.tab1 {
+	padding: 10px 20px 10px 28px;
+	border-bottom: 1px solid #DDD;
+}
+
+.tab1 a{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.tab1 a:link,
+.tab1 a:visited {
 	color: #000;
 	border-bottom: none;
 	text-decoration:none;
 	font-weight: 500;
 }
 
-.selfLabel a:hover {
+.tab1 a:hover {
 	color: #FFF;
 	border-bottom: none;
 	text-decoration:none;
@@ -106,18 +139,17 @@
 }
 
 .media3M {
-	padding: 0 80px;
+	padding: 0 20px;
 }
 
 .mediathree {
-	margin: 10px 0px;
-	padding: 0 30px 40px;
-
+	margin: 5px 0px;
+	padding: 0 5px 20px;
 }
 
 .box { 
 	width:100%;
-	height:426px;
+	height:100%;
 	position:relative;
 	background:rgba(255,255,255,1);
 	cursor:pointer;
@@ -125,7 +157,7 @@
 
 .box .bmbox { 
 	width:100%;
-	height:426px;
+	height:100%;
     background:rgba(0,0,0,0.3);
     position:absolute; 
     bottom:0px; 
@@ -137,7 +169,7 @@
 
 .box:hover .bmbox {
 	width:100%;
-	height:426px;
+	height:100%;
     background:rgba(0,0,0,0.3);
     position:absolute; 
     bottom:0px; 
@@ -154,24 +186,133 @@
 }
 
 .headh5 {
-	margin-top: 10px;
+	margin: 10px;
 	font-weight: 560;
+	font-size: 18px;
 }
 
 
 .footer {
-	height: 155px;
+	padding: 20px;
 	background-color: #29B078;
 }
 
 .footer01 {
 	color: #FFF;
+	margin: 1px 5px 0;
+	padding-bottom: 5px;
+	text-align: center;
+	background-color: #29B078;
 }
 
 .footerinfo {
-	height: 30px;
+	height: 40px;
 	background-color: #29B078;
 	border-top: 1px solid #FFF;
 	color: #FFF;
-	padding: 5px 0;
+	padding: 1px;
+	margin: 1px;
+	text-align: center;
+}
+
+.tab2-h {
+	font-size: 18px;
+}
+
+.tab2-h3 {
+	font-size: 16px;
+}
+
+.tab2-table {
+	padding: 10px;
+}
+
+.tab2-tableBottom {
+	padding-bottom: 5px;
+}
+
+.footerArea {
+	height: 20px;
+	padding-top: 20px;
+}
+
+/*没有小于768px，是因为Bootstrap3以移动端优先设计*/
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+	.tab2-h {
+		font-size: 20px;
+	}
+	.tab2-h3 {
+		font-size: 18px;
+	}
+	.tab2-p {
+		font-size: 15px;
+	}
+
+	.headh5 {
+		font-size: 19px;
+	}
+	.tab2-img {
+		float: left;
+	}
+	.mediathree {
+		margin: 10px 0px;
+		padding: 0 10px 40px;
+	}
+	.media3M {
+		padding: 0 40px;
+	}
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+	.tab2-h {
+		font-size: 22px;
+	}
+	.tab2-h3 {
+		font-size: 20px;
+	}
+	.headh5 {
+		font-size: 20px;
+	}
+	.tab2-p {
+		font-size: 16px;
+	}
+	.tab2-img {
+		float: left;
+	}
+	.mediathree {
+		margin: 10px 0px;
+		padding: 0 10px 40px;
+	}
+	.media3M {
+		padding: 0 60px;
+	}
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+	.tab2-h {
+		font-size: 24px;
+	}
+	.tab2-h3 {
+		font-size: 22px;
+	}
+	.headh5 {
+		font-size: 21px;
+	}
+	.tab2-p {
+		font-size: 18px;
+	}
+	.tab2-img {
+		float: left;
+	}
+	.mediathree {
+		margin: 10px 0px;
+		padding: 0 10px 40px;
+	}
+	.media3M {
+		padding: 0 80px;
+	}
 }

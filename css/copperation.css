@@ -1,3 +1,9 @@
+@charset "utf-8";
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+	color: #666;
+}
+
 .headerImg li {
 	display: inline-block;
 }
@@ -23,9 +29,15 @@
 }
 
 .newnav {
-	height: 80px;
+	padding: 10px 35px 20px;
 	background-color: #29B078;
 }
+
+.newbrand {
+	margin: 10px;
+	padding-bottom: 10px;
+}
+
 
 .bottomw {
 	padding: 30px 0 0 0;
@@ -52,6 +64,7 @@
 }
 
 .blankAreasmall {
+	padding-top: 190px;
 	height: 20px;
 }
 
@@ -84,29 +97,114 @@
 	line-height: 40px;
 }
 
+.ClistLittle {
+	font-size: 15px;
+}
+
 .tudou {
 	margin-left: 25px;
 }
 
 .tudoubody {
-	padding-right: 25px;
+	padding: 25px;
+	font-size: 15px;
+}
+
+.tab1-text {
+	font-size: 15px;
+}
+
+.panel-body {
+	padding: 0 20px;
 }
 
 
-
 .footer {
-	height: 155px;
+	padding: 20px;
 	background-color: #29B078;
 }
 
 .footer01 {
 	color: #FFF;
+	margin: 1px 5px 0;
+	padding-bottom: 5px;
+	text-align: center;
+	background-color: #29B078;
 }
 
 .footerinfo {
-	height: 30px;
+	height: 40px;
 	background-color: #29B078;
 	border-top: 1px solid #FFF;
 	color: #FFF;
-	padding: 5px 0;
+	padding: 1px;
+	margin: 1px;
+	text-align: center;
+}
+
+.footerArea {
+	height: 20px;
+	padding-top: 20px;
+}
+
+/*没有小于768px，是因为Bootstrap3以移动端优先设计*/
+
+/* 小屏幕（平板，大于等于768px） */
+@media (min-width: 768px) {
+	.blankAreasmall {
+		padding-top: 130px;
+	}
+	.ClistTop {
+		font-size: 18px;
+	}
+	.ClistLittle {
+		font-size: 16px;
+	}
+	.tab2-img {
+		float: left;
+	}
+	.panel-body {
+		padding: 10px;
+	}
+	.tab1-text .tudoubody {
+		font-size: 16px;
+	}
+}
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+@media (min-width: 992px) {
+	.ClistTop {
+		font-size: 20px;
+	}
+	.ClistLittle {
+		font-size: 18px;
+	}
+	.tab2-img {
+		float: left;
+	}
+	.panel-body {
+		padding: 20px;
+	}
+	.tab1-text .tudoubody {
+		font-size: 18px;
+	}
+}
+
+/* 大屏幕（大桌面显示器，大于等于1200px） */
+@media (min-width: 1200px) {
+	.ClistTop {
+		font-size: 22px;
+	}
+	.ClistLittle {
+		font-size: 20px;
+	}
+	.tab2-img {
+		float: left;
+	}
+	.panel-body {
+		padding: 25px;
+	}
+	.tab1-text .tudoubody {
+		font-size: 20px;
+	}	
 }
